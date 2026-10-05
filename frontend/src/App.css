@@ -1,0 +1,1120 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+  background: #f4f7fb;
+  color: #1f2937;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
+
+/* =========================================
+   LOGIN
+========================================= */
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background:
+    linear-gradient(
+      135deg,
+      #0f2747,
+      #265788
+    );
+}
+
+.login-card {
+  width: 100%;
+  max-width: 420px;
+  background: white;
+  padding: 38px;
+  border-radius: 16px;
+  box-shadow:
+    0 18px 45px
+    rgba(0, 0, 0, 0.18);
+}
+
+.login-card h1 {
+  margin: 0;
+  color: #17365d;
+  font-size: 31px;
+}
+
+.login-card > p {
+  margin-top: 8px;
+  color: #6b7280;
+}
+
+.login-card form {
+  margin-top: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.login-card label {
+  font-weight: 600;
+  color: #374151;
+}
+
+.login-card input {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #cfd8e3;
+  border-radius: 8px;
+  outline: none;
+  font-size: 15px;
+}
+
+.login-card input:focus {
+  border-color: #245487;
+}
+
+.login-card button {
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  padding: 13px;
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+  background: #1f4e78;
+  cursor: pointer;
+}
+
+.login-card button:hover {
+  background: #173b5d;
+}
+
+.status-message {
+  color: #b42318;
+  font-weight: 600;
+  margin-top: 18px;
+}
+
+
+/* =========================================
+   MAIN
+========================================= */
+
+.dashboard {
+  min-height: 100vh;
+  background: #f4f7fb;
+}
+
+.topbar {
+  min-height: 92px;
+  padding: 18px 55px;
+  background: #17365d;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  box-shadow:
+    0 2px 8px
+    rgba(0, 0, 0, 0.12);
+}
+
+.topbar h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.topbar p {
+  margin: 5px 0 0;
+  color: #dbe7f4;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.user-info h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.user-info p {
+  margin: 0;
+  font-size: 13px;
+}
+
+.user-info button {
+  margin-left: 10px;
+  border: 1px solid
+    rgba(255, 255, 255, 0.65);
+  background: transparent;
+  color: white;
+  border-radius: 7px;
+  padding: 9px 14px;
+  cursor: pointer;
+}
+
+.user-info button:hover {
+  background:
+    rgba(255, 255, 255, 0.12);
+}
+
+
+/* =========================================
+   DASHBOARD
+========================================= */
+
+.dashboard-content {
+  max-width: 1450px;
+  margin: 0 auto;
+  padding: 40px 50px 55px;
+}
+
+.dashboard-content h2 {
+  margin: 0;
+  color: #17365d;
+  font-size: 30px;
+}
+
+.subtitle {
+  color: #6b7280;
+  margin-top: 7px;
+  margin-bottom: 30px;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(
+      3,
+      minmax(0, 1fr)
+    );
+  gap: 24px;
+}
+
+.dashboard-card {
+  min-height: 205px;
+  background: white;
+  border-radius: 14px;
+  padding: 27px;
+  box-shadow:
+    0 4px 18px
+    rgba(0, 0, 0, 0.07);
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-card h3 {
+  color: #17365d;
+  margin: 0;
+  font-size: 21px;
+}
+
+.dashboard-card p {
+  color: #6b7280;
+  line-height: 1.55;
+  flex: 1;
+}
+
+.dashboard-card button {
+  align-self: flex-start;
+  background: #1f4e78;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.dashboard-card button:hover {
+  background: #173b5d;
+}
+
+
+/* =========================================
+   PAGE
+========================================= */
+
+.customer-page {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 34px 42px 55px;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 22px;
+}
+
+.page-header h2 {
+  margin: 0;
+  color: #17365d;
+  font-size: 29px;
+}
+
+.page-header p {
+  color: #6b7280;
+  margin: 7px 0 0;
+}
+
+.back-button {
+  border: none;
+  background: #6b7280;
+  color: white;
+  border-radius: 7px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background: #4b5563;
+}
+
+.page-message {
+  margin-bottom: 20px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  background: #e7f1fb;
+  color: #17365d;
+  font-weight: 600;
+}
+
+
+/* =========================================
+   MANAGEMENT LAYOUT
+========================================= */
+
+.customer-layout {
+  display: grid;
+  grid-template-columns:
+    350px
+    minmax(0, 1fr);
+  gap: 25px;
+  align-items: start;
+}
+
+.customer-form-card,
+.customer-list-card {
+  background: white;
+  border-radius: 13px;
+  box-shadow:
+    0 3px 14px
+    rgba(0, 0, 0, 0.07);
+}
+
+.customer-form-card {
+  padding: 24px;
+}
+
+.customer-list-card {
+  padding: 23px;
+  overflow: hidden;
+}
+
+.customer-form-card h3,
+.customer-list-card h3 {
+  color: #17365d;
+  margin-top: 0;
+}
+
+.customer-form-card form,
+.inline-form {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.customer-form-card label {
+  margin-top: 4px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #374151;
+}
+
+.customer-form-card input,
+.customer-form-card textarea,
+.customer-form-card select,
+.inline-form input,
+.inline-form textarea,
+.inline-form select {
+  width: 100%;
+  padding: 11px;
+  border:
+    1px solid #ccd5df;
+  border-radius: 7px;
+  font-size: 14px;
+  background: white;
+  color: #222;
+  outline: none;
+}
+
+.customer-form-card input:focus,
+.customer-form-card textarea:focus,
+.customer-form-card select:focus,
+.inline-form input:focus,
+.inline-form textarea:focus {
+  border-color: #245487;
+}
+
+.customer-form-card textarea {
+  resize: vertical;
+}
+
+.save-button {
+  border: none;
+  background: #1f4e78;
+  color: white;
+  border-radius: 7px;
+  padding: 11px 15px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 6px;
+}
+
+.save-button:hover {
+  background: #173b5d;
+}
+
+.cancel-button {
+  border: none;
+  background: #6b7280;
+  color: white;
+  border-radius: 7px;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin-top: 2px;
+}
+
+
+/* =========================================
+   VIN
+========================================= */
+
+.vin-row {
+  display: flex;
+  gap: 8px;
+}
+
+.vin-row input {
+  flex: 1;
+}
+
+.vin-button {
+  white-space: nowrap;
+  border: none;
+  background: #087f5b;
+  color: white;
+  padding: 10px 12px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.vin-button:hover {
+  background: #066849;
+}
+
+
+/* =========================================
+   TABLE
+========================================= */
+
+.list-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.list-title-row h3 {
+  margin: 0;
+}
+
+.list-title-row span {
+  background: #e8eef6;
+  color: #17365d;
+  border-radius: 18px;
+  padding: 6px 11px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.customer-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.customer-table th {
+  background: #f1f4f8;
+  color: #344054;
+  text-align: left;
+  padding: 12px;
+  border-bottom:
+    1px solid #d9e0e7;
+  white-space: nowrap;
+}
+
+.customer-table td {
+  padding: 12px;
+  border-bottom:
+    1px solid #edf0f3;
+  vertical-align: middle;
+}
+
+.customer-table tbody tr:hover {
+  background: #fafbfd;
+}
+
+.customer-table small {
+  color: #6b7280;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 7px;
+  flex-wrap: wrap;
+}
+
+.edit-button,
+.delete-button,
+.view-button,
+.small-delete {
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+  padding: 8px 11px;
+  font-weight: 600;
+}
+
+.edit-button {
+  background: #e99b14;
+}
+
+.edit-button:hover {
+  background: #c9820b;
+}
+
+.delete-button,
+.small-delete {
+  background: #d9363e;
+}
+
+.delete-button:hover,
+.small-delete:hover {
+  background: #b82b32;
+}
+
+.view-button {
+  background: #1f4e78;
+}
+
+.view-button:hover {
+  background: #173b5d;
+}
+
+.status-select {
+  padding: 8px 9px;
+  border:
+    1px solid #ccd5df;
+  border-radius: 6px;
+  background: white;
+  color: #333;
+  cursor: pointer;
+}
+
+.issue-cell {
+  min-width: 180px;
+  max-width: 260px;
+}
+
+
+/* =========================================
+   EMPTY
+========================================= */
+
+.empty-state {
+  padding: 60px 25px;
+  text-align: center;
+}
+
+.empty-state h4 {
+  margin: 0;
+  color: #17365d;
+  font-size: 20px;
+}
+
+.empty-state p,
+.muted-text {
+  color: #7b8490;
+}
+
+
+/* =========================================
+   MECHANIC
+========================================= */
+
+.job-summary-card {
+  background: white;
+  border-radius: 12px;
+  padding: 23px;
+  box-shadow:
+    0 3px 14px
+    rgba(0, 0, 0, 0.07);
+  display: grid;
+  grid-template-columns:
+    repeat(
+      4,
+      minmax(0, 1fr)
+    );
+  gap: 22px;
+  margin-bottom: 25px;
+}
+
+.job-summary-card div,
+.history-summary div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.job-summary-card strong,
+.history-summary strong {
+  color: #17365d;
+}
+
+.job-summary-card span,
+.history-summary span {
+  color: #59636f;
+}
+
+.mechanic-grid,
+.history-detail-grid {
+  display: grid;
+  grid-template-columns:
+    1fr 1fr;
+  gap: 24px;
+}
+
+.mechanic-panel,
+.history-panel {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow:
+    0 3px 14px
+    rgba(0, 0, 0, 0.07);
+}
+
+.mechanic-panel h3,
+.history-panel h3 {
+  margin-top: 0;
+  color: #17365d;
+}
+
+.checklist-list {
+  margin-top: 25px;
+}
+
+.checklist-item {
+  border:
+    1px solid #dfe5eb;
+  border-radius: 9px;
+  padding: 14px;
+  margin-bottom: 12px;
+}
+
+.checklist-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.check-label {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-weight: 600;
+}
+
+.check-label input {
+  width: auto;
+}
+
+.completed-text {
+  color: #7a838d;
+  text-decoration: line-through;
+}
+
+.notes-box {
+  width: 100%;
+  min-height: 75px;
+  margin-top: 12px;
+  padding: 10px;
+  border:
+    1px solid #ccd5df;
+  border-radius: 7px;
+  resize: vertical;
+}
+
+.parts-total {
+  text-align: right;
+  margin-top: 18px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #17365d;
+}
+
+
+/* =========================================
+   SERVICE HISTORY
+========================================= */
+
+.history-toolbar {
+  background: white;
+  border-radius: 12px;
+  padding: 17px;
+  box-shadow:
+    0 3px 14px
+    rgba(0, 0, 0, 0.07);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 20px;
+}
+
+.history-toolbar input {
+  flex: 1;
+  padding: 11px;
+  border:
+    1px solid #ccd5df;
+  border-radius: 7px;
+  outline: none;
+}
+
+.history-toolbar span {
+  white-space: nowrap;
+  background: #e8eef6;
+  color: #17365d;
+  border-radius: 18px;
+  padding: 8px 13px;
+  font-weight: 600;
+}
+
+.history-summary {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow:
+    0 3px 14px
+    rgba(0, 0, 0, 0.07);
+  display: grid;
+  grid-template-columns:
+    repeat(
+      3,
+      minmax(0, 1fr)
+    );
+  gap: 24px;
+  margin-bottom: 25px;
+}
+
+.history-item {
+  border:
+    1px solid #dfe5eb;
+  border-radius: 8px;
+  padding: 13px;
+  margin-bottom: 11px;
+}
+
+.history-item strong {
+  color: #17365d;
+}
+
+.history-item p {
+  color: #626c77;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+
+/* =========================================
+   MANAGER
+========================================= */
+
+.summary-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(
+      6,
+      minmax(0, 1fr)
+    );
+  gap: 15px;
+  margin-bottom: 35px;
+}
+
+.summary-card {
+  background: white;
+  padding: 20px 12px;
+  border-radius: 12px;
+  box-shadow:
+    0 3px 12px
+    rgba(0, 0, 0, 0.07);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.summary-card span {
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.summary-card strong {
+  color: #17365d;
+  font-size: 24px;
+}
+
+
+/* =========================================
+   JOB CARD
+========================================= */
+
+.job-card-print-area {
+  background: white;
+  padding: 28px;
+  border-radius: 13px;
+  box-shadow:
+    0 3px 15px
+    rgba(0, 0, 0, 0.08);
+}
+
+.job-card-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 25px;
+  padding-bottom: 20px;
+  margin-bottom: 25px;
+  border-bottom:
+    2px solid #17365d;
+}
+
+.job-card-heading h2 {
+  margin: 0;
+  color: #17365d;
+}
+
+.job-card-heading p {
+  margin:
+    5px 0 0;
+  color: #6b7280;
+}
+
+.job-card-number {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  gap: 5px;
+}
+
+.job-card-number strong {
+  color: #17365d;
+  font-size: 21px;
+}
+
+.job-card-number span {
+  font-size: 18px;
+}
+
+.job-card-section {
+  background: #f6f8fb;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 9px;
+}
+
+.job-card-section h3 {
+  color: #17365d;
+  margin-top: 0;
+}
+
+.job-card-section p {
+  margin-bottom: 0;
+  line-height: 1.6;
+}
+
+.invoice-card {
+  width: 100%;
+  max-width: 650px;
+  margin:
+    30px
+    0
+    0
+    auto;
+  border:
+    1px solid #dfe5eb;
+  border-radius: 11px;
+  padding: 22px;
+}
+
+.invoice-card h3 {
+  margin-top: 0;
+  color: #17365d;
+}
+
+.invoice-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 22px;
+  border-bottom:
+    1px solid #edf0f3;
+  padding: 11px 0;
+}
+
+.invoice-row input {
+  width: 170px;
+  padding: 9px;
+  border:
+    1px solid #ccd5df;
+  border-radius: 6px;
+}
+
+.invoice-total {
+  color: #17365d;
+  font-size: 19px;
+}
+
+.invoice-actions {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  flex-wrap: wrap;
+}
+
+.job-signatures {
+  display: grid;
+  grid-template-columns:
+    1fr 1fr;
+  gap: 100px;
+  margin-top: 80px;
+}
+
+.job-signatures div {
+  text-align: center;
+  padding-top: 8px;
+  border-top:
+    1px solid #444;
+}
+
+.print-only {
+  display: none;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (
+  max-width: 1200px
+) {
+
+  .summary-grid {
+    grid-template-columns:
+      repeat(
+        3,
+        1fr
+      );
+  }
+
+  .dashboard-grid {
+    grid-template-columns:
+      repeat(
+        2,
+        1fr
+      );
+  }
+}
+
+
+@media (
+  max-width: 950px
+) {
+
+  .customer-layout {
+    grid-template-columns:
+      1fr;
+  }
+
+  .mechanic-grid,
+  .history-detail-grid {
+    grid-template-columns:
+      1fr;
+  }
+
+  .job-summary-card {
+    grid-template-columns:
+      repeat(
+        2,
+        1fr
+      );
+  }
+
+  .history-summary {
+    grid-template-columns:
+      repeat(
+        2,
+        1fr
+      );
+  }
+}
+
+
+@media (
+  max-width: 700px
+) {
+
+  .topbar {
+    padding: 18px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .user-info {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .dashboard-content,
+  .customer-page {
+    padding:
+      25px
+      18px
+      40px;
+  }
+
+  .dashboard-grid,
+  .summary-grid,
+  .job-summary-card,
+  .history-summary {
+    grid-template-columns:
+      1fr;
+  }
+
+  .page-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .history-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .job-signatures {
+    grid-template-columns:
+      1fr;
+    gap: 55px;
+  }
+}
+
+
+/* =========================================
+   PRINT JOB CARD
+========================================= */
+
+@media print {
+
+  body {
+    background:
+      white !important;
+  }
+
+  .topbar,
+  .page-header,
+  .page-message,
+  .no-print {
+    display:
+      none !important;
+  }
+
+  .customer-page {
+    max-width:
+      none !important;
+
+    padding:
+      0 !important;
+
+    margin:
+      0 !important;
+  }
+
+  .job-card-print-area {
+    padding:
+      0 !important;
+
+    margin:
+      0 !important;
+
+    box-shadow:
+      none !important;
+
+    border-radius:
+      0 !important;
+  }
+
+  .history-summary,
+  .history-panel,
+  .invoice-card {
+    box-shadow:
+      none !important;
+  }
+
+  .print-only {
+    display:
+      flex !important;
+  }
+
+  .job-card-print-area {
+    color:
+      black;
+  }
+
+  @page {
+    size:
+      A4;
+
+    margin:
+      12mm;
+  }
+}
